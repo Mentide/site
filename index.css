@@ -1,91 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
-    max-width: 60ch;
-    margin: 5em auto;
-    line-height: 1.6;
-    background-size: 100%;
-    background-attachment: fixed;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    background: url(bg.svg);
-
-
+    background-color: rgb(40, 44, 51);
+    font-family: 'Open Sans', sans-serif;
 }
-.container {
+
+*{
+    box-sizing: border-box;
+}
+
+.name {
+    padding: 100px 0;
+    color: white;
     text-align: center;
 }
 
-.myLogo {
-    width: 150px;
-    height: 150px;
-    border-radius: 12px;
+.nameName {
+    color: rgb(255, 104, 104);
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
 }
 
-.title {
-    font-size: 50px;
+.nameIcon {
+    border-radius: 15px;
 }
 
-.desc {
+.nameStatus {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.badges {
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+}
+
+.badge {
+    color: #fff ;
+    margin: 0 10px;
     font-size: 25px;
-}
-
-.imagecard {
-    width: 200px;
-    height: 200px;
-}
-
-.btns {
-    text-align: center;
-}
-
-.btn {
-    margin: 15px;
-    padding: 15px 25px 15px 25px;
-    text-decoration: none;
-    color: white;
-    transition: all .3s ease;
-
-    border-radius: 4px;
+    transition: .5s;
     cursor: pointer;
 }
 
-.btn-ds {
-    background: #5865F2;
+.badge:hover {
+    color: rgb(0,136,204);
 }
 
-.btn-ds:hover {
-    background: #4650c0;
-}
 
-.btn-bot {
-    background: #c01d53;
-}
+.tooltip {
+    color: #fff ;
+    position: relative;
+    display: inline-block;
 
-.btn-bot:hover {
-    background: #8a1139;
-}
+  }
 
-.btn-topcord {
-    background: #7289DA;
-}
+  .tooltiptext {
+      font-size: 15px;
+  }
+  
 
-.btn-topcord:hover {
-    background: #5366ac;
-}
+  .tooltip .tooltiptext {
+    opacity: 0;
 
-.textHover {
-    text-decoration: none;
-    color: white;
-    transition: .5s ease;
-}
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
 
-.textHover:hover {
-    color: #c1c1c1;
-}
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    transition: .2s;
 
-@media (max-width: 400px) {
-    .btn {
-        
-        display: block;
-    }
-}
+    position: absolute;
+    z-index: 1;
+  }
+
+  
+  
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+  }
+
+  .nameStatus a {
+      text-decoration: none;
+      color: white;
+      border-bottom: 1px solid rgb(255, 104, 104);
+      transition: .3s;
+  }
+
+  .nameStatus a:hover {
+      color: rgb(255, 104, 104);
+  }
+
+  hr {
+      width: 20%;
+      border: 1px solid rgb(164, 148, 255);
+  }
